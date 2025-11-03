@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "routes": [
+  "name": "xinshuitiaozhan",
+  "builds": [
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/摸鱼金币.html"
+      "src": "index.html",
+      "use": "@vercel/static"
     }
   ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
